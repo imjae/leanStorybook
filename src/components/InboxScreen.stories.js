@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Provider } from "react-redux";
-import { actions } from "../lib/redux";
+import { action } from "@storybook/addon-actions";
 
 import { PureInboxScreen } from "./InboxScreen";
 import * as TaskListStories from "./TaskList.stories";
@@ -14,7 +14,7 @@ const store = {
     };
   },
   subscribe: () => 0,
-  dispatch: actions("dispatch"),
+  dispatch: action("dispatch"),
 };
 
 export default {
